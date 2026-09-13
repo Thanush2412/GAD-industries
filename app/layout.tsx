@@ -1,23 +1,22 @@
 import type { Metadata, Viewport } from "next";
 import "./globals.css";
+import { SiteLayoutClient } from "@/components/layout/SiteLayoutClient";
 
 export const metadata: Metadata = {
-  title: "GADIN INDUSTRIES TRADING FZCO | High-Performance uPVC Windows & Doors",
+  title: "IDOL PIPE & FITTINGS — High-Integrity Piping Systems & Precision Irrigation",
   description:
-    "Official architectural portal of GADIN INDUSTRIES TRADING FZCO (Dubai Silicon Oasis, Lic. 72748). Manufacturer and international exporter of EN 12608 Class A tropicalized uPVC casement windows, multi-track sliding patio doors, tilt & turn systems, and acoustic architectural facades.",
+    "Official website of Idol Pipe Fittings & Irrigation (Idol Plasto & Idol Polytech Pvt. Ltd., Rajkot, Gujarat). 24,000 MT/year manufacturing capacity, ISO 9001:2015 certified manufacturer of cPVC, uPVC, SWR, Borewell Casing, Submersible Column, HDPE and Micro-Irrigation systems.",
   keywords: [
-    "GADIN INDUSTRIES TRADING FZCO",
-    "uPVC windows manufacturer Dubai",
-    "uPVC casement windows",
-    "uPVC sliding patio doors",
-    "multi-chamber uPVC profiles",
-    "acoustic soundproof windows 42 dB",
-    "hurricane wind load windows 3000 Pa",
-    "EN 12608 Class A uPVC",
-    "Dubai Silicon Oasis building materials exporter",
-    "galvanized steel core uPVC profiles"
+    "Idol Pipe",
+    "cPVC pipes manufacturer India",
+    "uPVC casing pipe IS 12818",
+    "submersible column pipe",
+    "drip irrigation system",
+    "HDPE telecom duct",
+    "SWR drainage system",
+    "Rajkot Gujarat pipes exporter"
   ],
-  authors: [{ name: "GADIN Industries Architectural Fenestration Directorate" }],
+  authors: [{ name: "Idol Pipe Fittings & Irrigation Technical Directorate" }],
   icons: {
     icon: "/images/gi_icon.png",
     apple: "/images/gi_icon.png"
@@ -36,8 +35,8 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en" className="scroll-smooth">
-      <body className="min-h-screen bg-[#FFFFFF] text-[#1E293B] selection:bg-[#DD612A] selection:text-white">
-        {children}
+      <body className="min-h-screen bg-white text-[#1E293B] selection:bg-[#DD612A] selection:text-white antialiased">
+        <SiteLayoutClient>{children}</SiteLayoutClient>
       </body>
     </html>
   );

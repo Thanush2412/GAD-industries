@@ -1,36 +1,74 @@
-# dependencies
+# Dependencies
 /node_modules
 /.pnp
 .pnp.js
 .yarn/install-state.gz
 
-# testing
-/coverage
-
-# next.js
+# Next.js Build & Outputs
 /.next/
 /out/
-
-# production
 /build
+dist/
 
-# misc
-.DS_Store
-*.pem
+# TypeScript
+*.tsbuildinfo
+next-env.d.ts
 
-# debug
+# Testing & Coverage
+/coverage
+
+# Debug & Logs
+logs/
+*.log
 npm-debug.log*
 yarn-debug.log*
 yarn-error.log*
 .pnpm-debug.log*
 
-# local env files
-.env*.local
+# Local & Environment Variables
 .env
+.env*.local
+.env.local
+.env.development.local
+.env.test.local
+.env.production.local
 
-# vercel
+# Vercel & Deployment
 .vercel
 
-# typescript
-*.tsbuildinfo
-next-env.d.ts
+# Editor & IDE Directories
+.vscode/
+!.vscode/extensions.json
+.idea/
+*.suo
+*.ntvs*
+*.njsproj
+*.sln
+*.sw?
+
+# OS Generated Files
+.DS_Store
+.DS_Store?
+._*
+.Spotlight-V100
+.Trashes
+ehthumbs.db
+Thumbs.db
+[Dd]esktop.ini
+$RECYCLE.BIN/
+
+# Python & Scraping / Scratch Artifacts
+__pycache__/
+*.py[cod]
+*$py.class
+.venv/
+venv/
+scratch/
+scraped_pages/
+idol_scraped.json
+*.scraped.json
+
+# SSL / Certificates / Secrets
+*.pem
+*.key
+*.cert
