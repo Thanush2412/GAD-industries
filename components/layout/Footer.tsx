@@ -55,15 +55,15 @@ export const Footer: React.FC<FooterProps> = ({ onOpenRFQ }) => {
           {/* Col 1: Corporate Profile */}
           <div className="lg:col-span-2 space-y-4">
             <div className="flex items-center gap-3">
-              <div className="w-9 h-9 rounded-xl bg-white text-[#0B2545] font-black text-lg flex items-center justify-center">
-                ID
+              <div className="w-9 h-9 rounded-xl bg-white text-[#0B2545] font-black text-sm flex items-center justify-center">
+                GU
               </div>
               <div>
                 <span className="text-xl font-extrabold text-white tracking-tight">
-                  IDOL PIPE & FITTINGS
+                  GADIN UPVC PIPES
                 </span>
                 <p className="text-xs text-blue-300 font-medium">
-                  Idol Plasto & Idol Polytech Pvt. Ltd. (Est. 1989)
+                  High-Integrity Piping Systems & Precision Irrigation
                 </p>
               </div>
             </div>
@@ -256,7 +256,7 @@ export const Footer: React.FC<FooterProps> = ({ onOpenRFQ }) => {
 
         {/* Bottom Legal */}
         <div className="pt-8 flex flex-col sm:flex-row items-center justify-between text-xs text-slate-400 gap-4">
-          <p>© 1989 – 2026 IDOL PIPE FITTINGS & IRRIGATION. All rights reserved.</p>
+          <p>© 1989 – 2026 GADIN UPVC PIPES. All rights reserved.</p>
           <div className="flex items-center gap-6">
             <Link href="/about" className="hover:text-white transition-colors">
               About Enterprise

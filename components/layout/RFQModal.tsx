@@ -29,7 +29,7 @@ export const RFQModal: React.FC<RFQModalProps> = ({
 
   const handleSubmit = (e: React.FormEvent) => {
     e.preventDefault();
-    const ticketId = `IDOL-RFQ-${Math.floor(100000 + Math.random() * 900000)}`;
+    const ticketId = `GADIN-RFQ-${Math.floor(100000 + Math.random() * 900000)}`;
     setRfqTicket(ticketId);
     setSubmitted(true);
   };
@@ -100,7 +100,7 @@ export const RFQModal: React.FC<RFQModalProps> = ({
 
               <div className="flex flex-col sm:flex-row gap-3 justify-center pt-2">
                 <a
-                  href={`https://wa.me/919265496492?text=Hello%20Idol%20Pipe%20Team,%20I%20have%20submitted%20RFQ%20${rfqTicket}%20for%20${productCategory}.%20Please%20expedite.`}
+                  href={`https://wa.me/919265496492?text=Hello%20GADIN%20Team,%20I%20have%20submitted%20RFQ%20${rfqTicket}%20for%20${productCategory}.%20Please%20expedite.`}
                   target="_blank"
                   rel="noopener noreferrer"
                   className="px-5 py-2.5 rounded-xl bg-emerald-600 hover:bg-emerald-700 text-white font-medium text-xs transition-colors flex items-center justify-center gap-2"

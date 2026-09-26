@@ -65,7 +65,7 @@ export const Header: React.FC<HeaderProps> = ({ onOpenRFQ }) => {
           <div className="flex items-center gap-4">
             <span className="flex items-center gap-1.5 font-medium text-white">
               <span className="w-2 h-2 rounded-full bg-[#DD612A]"></span>
-              IDOL PIPE FITTINGS & IRRIGATION • Est. 1989
+              GADIN UPVC PIPES • Est. 1989
             </span>
             <span className="hidden md:inline text-slate-500">|</span>
             <span className="hidden md:flex items-center gap-1 text-slate-300">
@@ -98,12 +98,12 @@ export const Header: React.FC<HeaderProps> = ({ onOpenRFQ }) => {
       <div className="max-w-7xl mx-auto px-4 sm:px-8 py-3.5 flex items-center justify-between">
         {/* Brand Logo */}
         <Link href="/" className="flex items-center gap-3 group">
-          <div className="w-9 h-9 rounded-xl bg-[#0B2545] text-white font-black text-lg flex items-center justify-center shadow-sm group-hover:bg-[#053C82] transition-colors">
-            ID
+          <div className="w-9 h-9 rounded-xl bg-[#0B2545] text-white font-black text-sm flex items-center justify-center shadow-sm group-hover:bg-[#053C82] transition-colors">
+            GU
           </div>
           <div>
             <span className="font-extrabold text-xl tracking-tight text-[#0B2545]">
-              IDOL PIPE
+              GADIN UPVC PIPES
             </span>
             <p className="text-[10px] tracking-wider uppercase font-semibold text-slate-500">
               Pipes • Fittings • Irrigation

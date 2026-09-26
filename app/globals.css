@@ -4,81 +4,64 @@
 
 @layer base {
   :root {
-    --bg-paper: #FBFBF9;
-    --bg-card: #FFFFFF;
-    --border-hairline: #E5E2D9;
-    --text-primary: #18181B;
-    --text-secondary: #52525B;
-    --text-muted: #71717A;
-    --accent-amber: #D97706;
+    --background: #ffffff;
+    --foreground: #111827;
+  }
+
+  html {
+    scroll-behavior: smooth;
+    font-family: ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
   }
 
   body {
-    background-color: var(--bg-paper);
-    color: var(--text-primary);
-    font-feature-settings: "cv02", "cv03", "cv04", "cv11";
+    background-color: #ffffff;
+    color: #111827;
+    margin: 0;
+    padding: 0;
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
   }
+}
 
-  /* Editorial Custom Scrollbar */
-  ::-webkit-scrollbar {
-    width: 6px;
-    height: 6px;
+/* Custom styles from live site build */
+@media (max-width: 1023px) {
+  .hero-grid {
+    display: flex !important;
+    flex-direction: column !important;
+    background: #ffffff;
+    border-radius: 1.5rem;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+    padding: 1.5rem;
+    margin: 1rem;
+    min-height: calc(100vh - 2rem);
+    justify-content: center;
   }
-  ::-webkit-scrollbar-track {
-    background: #F4F3EE;
+
+  .hero-image {
+    order: 1 !important;
+    margin-bottom: 1.5rem;
+    flex-shrink: 0;
   }
-  ::-webkit-scrollbar-thumb {
-    background: #D4D0C5;
-    border-radius: 2px;
+
+  .hero-content {
+    order: 2 !important;
+    flex-grow: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
   }
-  ::-webkit-scrollbar-thumb:hover {
-    background: #A1A1AA;
+
+  .hero-buttons {
+    flex-direction: column !important;
+  }
+
+  .hero-buttons button {
+    width: 100% !important;
   }
 }
 
-/* Print and Editorial Utilities */
-.hairline-border {
-  border-color: #E5E2D9;
-}
-
-.table-num {
-  font-variant-numeric: tabular-nums;
-}
-
-.paper-grid {
-  background-size: 32px 32px;
-  background-image: 
-    linear-gradient(to right, rgba(229, 226, 217, 0.4) 1px, transparent 1px),
-    linear-gradient(to bottom, rgba(229, 226, 217, 0.4) 1px, transparent 1px);
-}
-
-/* Dynamic Interactive Transitions */
-.card-hover-fx {
-  transition: transform 0.35s cubic-bezier(0.16, 1, 0.3, 1), box-shadow 0.35s cubic-bezier(0.16, 1, 0.3, 1), border-color 0.25s ease;
-}
-
-.card-hover-fx:hover {
-  transform: translateY(-4px);
-  box-shadow: 0 20px 30px -10px rgba(5, 60, 130, 0.12), 0 0 1px 1px rgba(5, 60, 130, 0.08);
-}
-
-.btn-interactive {
-  transition: all 0.25s cubic-bezier(0.16, 1, 0.3, 1);
-}
-
-.btn-interactive:hover {
-  transform: translateY(-1.5px);
-  box-shadow: 0 8px 20px -4px rgba(221, 97, 42, 0.35);
-}
-
-.btn-interactive:active {
-  transform: translateY(0px);
-}
-
-/* Shimmer Highlight Effect */
-.shimmer-bg {
-  background: linear-gradient(90deg, rgba(255,255,255,0) 0%, rgba(255,255,255,0.15) 50%, rgba(255,255,255,0) 100%);
-  background-size: 200% 100%;
+@media (min-width: 1024px) {
+  .hero-grid {
+    margin-top: 3rem;
+  }
 }

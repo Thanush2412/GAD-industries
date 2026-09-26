@@ -348,7 +348,7 @@ export const GAD_PLANT_DATA = {
 
 export const GADIN_CORPORATE_DATA = {
   companyName: "GADIN INDUSTRIES TRADING FZCO",
-  brandName: "GADIN PIPES & IRRIGATION",
+  brandName: "GADIN UPVC PIPES",
   associateBrand: "IDOL PIPE & FITTINGS",
   shortCode: "GIT",
   tagline: "High-Performance Piping Systems & Precision Irrigation",
